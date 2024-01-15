@@ -4,11 +4,14 @@ website/output
 # solutions
 _solution.*
 
-# python cache
+# python and environment cache
 *__pycache__*
 *.pyc
 .DS_Store
 .__*
+.ipynb_checkpoints
+.mypy_cache
+.vscode
 
 # models
 *.h5
