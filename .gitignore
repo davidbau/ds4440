@@ -1,1 +1,19 @@
+# website build
 website/output
+
+# solutions
+_solution.*
+
+# python cache
+*__pycache__*
+*.pyc
+.DS_Store
+.__*
+
+# models
+*.h5
+*.hdf5
+*.pth
+
+# datasets unzipped
+*cifar10_data/
