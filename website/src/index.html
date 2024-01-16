@@ -1,115 +1,238 @@
 <html>
+
 <head>
-<style>
-body { margin: 0.5in; background-color: aliceblue }
-h1,h2,h3,h4,h5 { font-family: helvetica, arial, sans-serif }
-.cal { border-collapse: collapse; }
-.cal td { border-bottom: 1px solid black; vertical-align: top; padding: 3px 5px; }
-</style>
+  <style>
+    body {
+      margin: 0.5in;
+      background-color: aliceblue
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: helvetica, arial, sans-serif
+    }
+
+    .cal {
+      border-collapse: collapse;
+    }
+
+    .cal td {
+      border-bottom: 1px solid black;
+      vertical-align: top;
+      padding: 3px 5px;
+    }
+  </style>
 </head>
+
 <body>
 
-<h1>DS 4440 - Spring 2024 - Practical Deep Networks</h1>
+  <h1>DS 4440 - Spring 2024 - Practical Deep Networks</h1>
 
-<p>Tuesdays 11:45 AM - 1:25 PM and Thursdays 2:50 PM - 4:30 PM, <a href="https://nuflex.northeastern.edu/classroom/sh-420/">Shillman Hall 420</a>. Class meetings are in-person only.
+  <p>Tuesdays 11:45 AM - 1:25 PM and Thursdays 2:50 PM - 4:30 PM, <a
+      href="https://nuflex.northeastern.edu/classroom/sh-420/">Shillman Hall 420</a>. Class meetings are in-person only.
 
-<p>Professor: David Bau <a href="mailto:davidbau@northeastern.edu">davidbau@northeastern.edu</a>.
-Office Hours: before class, 10:30am Tuesdays, near the lecture hall
+  <p>Professor: David Bau <a href="mailto:davidbau@northeastern.edu">davidbau@northeastern.edu</a>.
+    Office Hours: before class, 10:30am Tuesdays, near the lecture hall
 
-<p>TAs:<br>
-Eric Todd
-<a href="malto:todd.er@northeastern.edu">todd.er@northeastern.edu</a>. Help hours: Wednesdays 10am-12pm (https://northeastern.zoom.us/my/erictodd)<br>
-Arnab Sen Sharma
-<a href="mailto:sensharma.a@northeastern.edu">sensharma.a@northeastern.edu</a>. Help hours: Mondays 2-4pm (https://northeastern.zoom.us/my/arnab.sensharma)
+  <p>TAs:<br>
+    Eric Todd
+    <a href="malto:todd.er@northeastern.edu">todd.er@northeastern.edu</a>. Help hours: Wednesdays 10am-12pm
+    (https://northeastern.zoom.us/my/erictodd)<br>
+    Arnab Sen Sharma
+    <a href="mailto:sensharma.a@northeastern.edu">sensharma.a@northeastern.edu</a>. Help hours: Mondays 2-4pm
+    (https://northeastern.zoom.us/my/arnab.sensharma)
 
 
-<p>Sign up for Piazza
-<a href="https://piazza.com/northeastern/spring2024/ds444039306202430">here</a>.
-Hand in nightly readings and class notebooks on Canvas
-<a href="https://northeastern.instructure.com/courses/166739/assignments">here</a>.
+  <p>Sign up for Piazza
+    <a href="https://piazza.com/northeastern/spring2024/ds444039306202430">here</a>.
+    Hand in nightly readings and class notebooks on Canvas
+    <a href="https://northeastern.instructure.com/courses/166739/assignments">here</a>.
 
-<h2>Summary</h2>
-In this course we will learn the principles and practice of deep learning methods.
+  <h2>Summary</h2>
+  In this course we will learn the principles and practice of deep learning methods.
 
-We will cover the capabilities of deep networks, the main methods for training them effectively, and the common architectures and techniques for using a deep network to process and produce images and natural language text.  In addition to getting experience using these methods, we will discuss the evolution of the field, some of the main questions and debates that have emerged in deep learning research, and explore some current research topics.  There will be a final project where you work with a partner implement a solution to a problem using deep network methods.
+  We will cover the capabilities of deep networks, the main methods for training them effectively, and the common
+  architectures and techniques for using a deep network to process and produce images and natural language text. In
+  addition to getting experience using these methods, we will discuss the evolution of the field, some of the main
+  questions and debates that have emerged in deep learning research, and explore some current research topics. There
+  will be a final project where you work with a partner implement a solution to a problem using deep network methods.
 
-<h2>Grading</h2>
-160 points total.
+  <h2>Grading</h2>
+  160 points total.
 
-<p>Class participation: 40 points.  In-class participation and notebooks.
-There will be points for submitting questions on nightly reading, and for submitting in-class notebooks, about 20 each.
+  <p>Class participation: 40 points. In-class participation and notebooks.
+    There will be points for submitting questions on nightly reading, and for submitting in-class notebooks, about 20
+    each.
 
-<p>Homework: 40 points.  Programming and calculation exercises.
+  <p>Homework: 40 points. Programming and calculation exercises.
 
-Homeworks will be jupyter notebooks to be worked through by students individually, due to be submitted online every two weeks at 11AM before class when they are due.  Late homework submissions will be accepted but will lose points per day late, no points after a week.  10 points per homework.
+    Homeworks will be jupyter notebooks to be worked through by students individually, due to be submitted online every
+    two weeks at 11AM before class when they are due. Late homework submissions will be accepted but will lose points
+    per day late, no points after a week. 10 points per homework.
 
-<p>Midterm: 40 points.  A written exam about foundational methods.  Closed-book.
+  <p>Midterm: 40 points. A written exam about foundational methods. Closed-book.
 
-<p>Final Project: 40 points.  A project to solve a problem by training and evaluating a deep network. Done by groups of 2 students (3 with permission).  We may choose a contest activity for this.
+  <p>Final Project: 40 points. A project to solve a problem by training and evaluating a deep network. Done by groups of
+    2 students (3 with permission). We may choose a contest activity for this.
 
-<h2>Books</h2>
-<p>There is no textbook for the class.  Slides of material we have covered are linked below.
+  <h2>Books</h2>
+  <p>There is no textbook for the class. Slides of material we have covered are linked below.
 
-<p>
-For those looking for a good book, here are some good ones I recommend.
-<ul>
-  <li><a href="https://fleuret.org/francois/lbdl.html">Fleuret's Little Book of Deep Learning</a>
-  <li><a href="https://d2l.ai/">Dive into deep learning</a>
-</ul>
+  <p>
+    For those looking for a good book, here are some good ones I recommend.
+  <ul>
+    <li><a href="https://fleuret.org/francois/lbdl.html">Fleuret's Little Book of Deep Learning</a>
+    <li><a href="https://d2l.ai/">Dive into deep learning</a>
+  </ul>
 
-<h2>Calendar</h2>
-<table class="cal">
-<tr><td>Tuesday, January 9, 2024</td><td>What is deep learning, a bit of history in three traditions</td>
-<td>
-  <a href="slides/Lecture-1-Introduction.pptx">slides</a> -
-  <a href="https://papers.baulab.info/papers/also/NyTimes-1958.pdf">1958 In-class Reading</a> -
-  <a href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/classdemo/PerceptronLearning.ipynb">Perceptrons Notebook</a>
-  (<a href="https://northeastern.instructure.com/courses/166739/quizzes/581798">hand-in</a>) -
-  <a href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/HW1/HW1_Introduction.ipynb">HW1 out</a>
-</td>
-</tr>
-<tr><td>Thursday, January 11, 2024</td><td>Continuing history: gradient descent, universal computation, what is an MLP</td>
-<td>
-  <a href="slides/Lecture-2-Rumelhart-pytorch.pptx">slides</a> -
-  <a href="https://papers.baulab.info/papers/Rumelhart-1986.pdf">Read Rumelhart 1986</a>
-  (<a href="https://northeastern.instructure.com/courses/166739/quizzes/581707">hand-in) -
-  <a href="https://colab.research.google.com/github/davidbau/how-to-read-pytorch/blob/master/notebooks/1-Pytorch-Introduction.ipynb">Notebook on How to Read Pytorch</a> (<a href="https://northeastern.instructure.com/courses/166739/assignments/2180620">hand-in</a>)
-</td>
-</tr>
-<tr><td>Tuesday, January 16, 2024</td><td>What we're doing when a function is an answer, computation graphs and modular functional learning</td>
-<td>
-  <a href="https://papers.baulab.info/papers/Bottou-1990.pdf">Read Bottou 1990</a>
-  (<a href="https://northeastern.instructure.com/courses/166739/quizzes/582037">hand-in</a>) -
-</td>
-</tr>
-<tr><td>Thursday, January 18, 2024</td><td>Backprop I</td>
-<td>
-  <a href="https://northeastern.instructure.com/courses/166739/assignments/2174624">HW1 due</a>
-</td>
-</tr>
-<tr><td>Tuesday, January 23, 2024</td><td>Backprop II</td></tr>
-<tr><td>Thursday, January 25, 2024</td><td>The practice of training (1).  Statistical view: classification, evaluation, generalization</td></tr>
-<tr><td>Tuesday, January 30, 2024</td><td>The practice of training (2). Hyperparameters, convergence vs explosion, initialization</td></tr>
-<tr><td>Thursday, February 1, 2024</td><td>The practice of training (3). The ADAM optimizer</td></tr>
-<tr><td>Tuesday, February 6, 2024</td><td>Words and images: representing concepts a vectors; time-invariant and translation-invariant weight-sharing</td></tr>
-<tr><td>Thursday, February 8, 2024</td><td>From invariance to convolution: CNNs; receptive fields</td></tr>
-<tr><td>Tuesday, February 13, 2024</td><td>SOTA CNNs; resnets, unets</td></tr>
-<tr><td>Thursday, February 15, 2024</td><td>From invariance to recurrence: RNNs</td></tr>
-<tr><td>Tuesday, February 20, 2024</td><td>RNNs and language modeling (the statistcial factorization of language)</td></tr>
-<tr><td>Thursday, February 22, 2024</td><td>Midterm review</td></tr>
-<tr><td>Tuesday, February 27, 2024</td><td>Midterm exam</td></tr>
-<tr><td>Thursday, February 29, 2024</td><td>Transformers</td></tr>
-<tr><td>Tuesday, March 5, 2024</td><td>Spring break</td></tr>
-<tr><td>Thursday, March 7, 2024</td><td>Spring break</td></tr>
-<tr><td>Tuesday, March 12, 2024</td><td>After transformers: S4 and Mamba</td></tr>
-<tr><td>Thursday, March 14, 2024</td><td>Generating images: VAE and GANs</td></tr>
-<tr><td>Tuesday, March 19, 2024</td><td>Generating images: Diffusion and text-condition diffusion.  Stable diffusion</td></tr>
-<tr><td>Thursday, March 21, 2024</td><td>LLMs: how to make a chatbot.  pretraining and scaling laws; fine-tuning and human prefs, RLHF.</td></tr>
-<tr><td>Tuesday, March 26, 2024</td><td>Machine learning without machine learning: zero-shot QA, ICL, prompting, chain-of-thought.</td></tr>
-<tr><td>Thursday, April 4, 2024</td><td>Interpreting large models: ROME lecture</td></tr>
-<tr><td>Tuesday, April 9, 2024</td><td>Agents, tool use, and emergence of reasonable behavior</td></tr>
-<tr><td>Thursday, April 11, 2024</td><td>Extra lecture or gap day</td></tr>
-<tr><td>Tuesday, April 16, 2024</td><td>Project presentations</td></tr>
+  <h2>Calendar</h2>
+  <table class="cal">
+    <tr>
+      <td>Tuesday, January 9, 2024</td>
+      <td>What is deep learning, a bit of history in three traditions</td>
+      <td>
+        <a href="slides/Lecture-1-Introduction.pptx">slides</a> -
+        <a href="https://papers.baulab.info/papers/also/NyTimes-1958.pdf">1958 In-class Reading</a> -
+        <a href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/classdemo/PerceptronLearning.ipynb">Perceptrons
+          Notebook</a>
+        (<a href="https://northeastern.instructure.com/courses/166739/quizzes/581798">hand-in</a>) -
+        <a href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/HW1/HW1_Introduction.ipynb">HW1
+          out</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Thursday, January 11, 2024</td>
+      <td>Continuing history: gradient descent, universal computation, what is an MLP</td>
+      <td>
+        <a href="slides/Lecture-2-Rumelhart-pytorch.pptx">slides</a> -
+        <a href="https://papers.baulab.info/papers/Rumelhart-1986.pdf">Read Rumelhart 1986</a>
+        (<a href="https://northeastern.instructure.com/courses/166739/quizzes/581707">hand-in) -
+          <a
+            href="https://colab.research.google.com/github/davidbau/how-to-read-pytorch/blob/master/notebooks/1-Pytorch-Introduction.ipynb">Notebook
+            on How to Read Pytorch</a> (<a
+            href="https://northeastern.instructure.com/courses/166739/assignments/2180620">hand-in</a>)
+      </td>
+    </tr>
+    <tr>
+      <td>Tuesday, January 16, 2024</td>
+      <td>What we're doing when a function is an answer, computation graphs and modular functional learning</td>
+      <td>
+        <a href="https://papers.baulab.info/papers/Bottou-1990.pdf">Read Bottou 1990</a>
+        (<a href="https://northeastern.instructure.com/courses/166739/quizzes/582037">hand-in</a>) -
+        <a href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/HW2/HW2_Backpropagation.ipynb">
+          HW2 out</a> -
+        <a
+          href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/HW3_Training_NN/HW3_Training_NN.ipynb">
+          HW3 out
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>Thursday, January 18, 2024</td>
+      <td>Backprop I</td>
+      <td>
+        <a href="https://northeastern.instructure.com/courses/166739/assignments/2174624">HW1 due</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Tuesday, January 23, 2024</td>
+      <td>Backprop II</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday, January 25, 2024</td>
+      <td>The practice of training (1). Statistical view: classification, evaluation, generalization</td>
+      <td>HW2 due</td>
+    </tr>
+    <tr>
+      <td>Tuesday, January 30, 2024</td>
+      <td>The practice of training (2). Hyperparameters, convergence vs explosion, initialization</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thursday, February 1, 2024</td>
+      <td>The practice of training (3). The ADAM optimizer</td>
+      <td>HW3 due</td>
+    </tr>
+    <tr>
+      <td>Tuesday, February 6, 2024</td>
+      <td>Words and images: representing concepts a vectors; time-invariant and translation-invariant weight-sharing
+      </td>
+    </tr>
+    <tr>
+      <td>Thursday, February 8, 2024</td>
+      <td>From invariance to convolution: CNNs; receptive fields</td>
+    </tr>
+    <tr>
+      <td>Tuesday, February 13, 2024</td>
+      <td>SOTA CNNs; resnets, unets</td>
+    </tr>
+    <tr>
+      <td>Thursday, February 15, 2024</td>
+      <td>From invariance to recurrence: RNNs</td>
+    </tr>
+    <tr>
+      <td>Tuesday, February 20, 2024</td>
+      <td>RNNs and language modeling (the statistcial factorization of language)</td>
+    </tr>
+    <tr>
+      <td>Thursday, February 22, 2024</td>
+      <td>Midterm review</td>
+    </tr>
+    <tr>
+      <td>Tuesday, February 27, 2024</td>
+      <td>Midterm exam</td>
+    </tr>
+    <tr>
+      <td>Thursday, February 29, 2024</td>
+      <td>Transformers</td>
+    </tr>
+    <tr>
+      <td>Tuesday, March 5, 2024</td>
+      <td>Spring break</td>
+    </tr>
+    <tr>
+      <td>Thursday, March 7, 2024</td>
+      <td>Spring break</td>
+    </tr>
+    <tr>
+      <td>Tuesday, March 12, 2024</td>
+      <td>After transformers: S4 and Mamba</td>
+    </tr>
+    <tr>
+      <td>Thursday, March 14, 2024</td>
+      <td>Generating images: VAE and GANs</td>
+    </tr>
+    <tr>
+      <td>Tuesday, March 19, 2024</td>
+      <td>Generating images: Diffusion and text-condition diffusion. Stable diffusion</td>
+    </tr>
+    <tr>
+      <td>Thursday, March 21, 2024</td>
+      <td>LLMs: how to make a chatbot. pretraining and scaling laws; fine-tuning and human prefs, RLHF.</td>
+    </tr>
+    <tr>
+      <td>Tuesday, March 26, 2024</td>
+      <td>Machine learning without machine learning: zero-shot QA, ICL, prompting, chain-of-thought.</td>
+    </tr>
+    <tr>
+      <td>Thursday, April 4, 2024</td>
+      <td>Interpreting large models: ROME lecture</td>
+    </tr>
+    <tr>
+      <td>Tuesday, April 9, 2024</td>
+      <td>Agents, tool use, and emergence of reasonable behavior</td>
+    </tr>
+    <tr>
+      <td>Thursday, April 11, 2024</td>
+      <td>Extra lecture or gap day</td>
+    </tr>
+    <tr>
+      <td>Tuesday, April 16, 2024</td>
+      <td>Project presentations</td>
+    </tr>
 
-</table>
-
+  </table>
