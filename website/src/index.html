@@ -1,53 +1,53 @@
-<html>
+  <html>
 
-<head>
-  <style>
-    body {
-      margin: 0.5in;
-      background-color: aliceblue
-    }
+  <head>
+    <style>
+      body {
+        margin: 0.5in;
+        background-color: aliceblue
+      }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: helvetica, arial, sans-serif
-    }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: helvetica, arial, sans-serif
+      }
 
-    .cal {
-      border-collapse: collapse;
-    }
+      .cal {
+        border-collapse: collapse;
+      }
 
-    .cal td {
-      border-bottom: 1px solid black;
-      vertical-align: top;
-      padding: 3px 5px;
-    }
-  </style>
-</head>
+      .cal td {
+        border-bottom: 1px solid black;
+        vertical-align: top;
+        padding: 3px 5px;
+      }
+    </style>
+  </head>
 
-<h1>DS 4440 - Spring 2024 - Practical Deep Networks</h1>
+  <h1>DS 4440 - Spring 2024 - Practical Deep Networks</h1>
 
-<p>Tuesdays 11:45 AM - 1:25 PM and Thursdays 2:50 PM - 4:30 PM, <a
-    href="https://nuflex.northeastern.edu/classroom/sh-420/">Shillman Hall 420</a>. Class meetings are in-person, and
-  will sometimes be on zoom at <a href="https://northeastern.zoom.us/my/davidbau">this link</a>.
+  <p>Tuesdays 11:45 AM - 1:25 PM and Thursdays 2:50 PM - 4:30 PM, <a
+      href="https://nuflex.northeastern.edu/classroom/sh-420/">Shillman Hall 420</a>. Class meetings are in-person, and
+    will sometimes be on zoom at <a href="https://northeastern.zoom.us/my/davidbau">this link</a>.
 
-<p>Professor: David Bau <a href="mailto:davidbau@northeastern.edu">davidbau@northeastern.edu</a>.
-  Office Hours: before class, 10:30am Tuesdays, near the lecture hall
+  <p>Professor: David Bau <a href="mailto:davidbau@northeastern.edu">davidbau@northeastern.edu</a>.
+    Office Hours: before class, 10:30am Tuesdays, near the lecture hall
 
-<p>TAs:<br>
-  Eric Todd
-  <a href="malto:todd.er@northeastern.edu">todd.er@northeastern.edu</a>. Help hours: Wednesdays 10am-12pm (<a
-    href="https://northeastern.zoom.us/my/erictodd">zoom link</a>)<br>
-  Arnab Sen Sharma
-  <a href="mailto:sensharma.a@northeastern.edu">sensharma.a@northeastern.edu</a>. Help hours: Mondays 4-6pm (<a
-    href="https://northeastern.zoom.us/my/arnab.sensharma">zoom link</a>)
+  <p>TAs:<br>
+    Eric Todd
+    <a href="malto:todd.er@northeastern.edu">todd.er@northeastern.edu</a>. Help hours: Wednesdays 10am-12pm (<a
+      href="https://northeastern.zoom.us/my/erictodd">zoom link</a>)<br>
+    Arnab Sen Sharma
+    <a href="mailto:sensharma.a@northeastern.edu">sensharma.a@northeastern.edu</a>. Help hours: Mondays 4-6pm (<a
+      href="https://northeastern.zoom.us/my/arnab.sensharma">zoom link</a>)
 
 
-<p>Sign up for Piazza
-  <a href="https://piazza.com/northeastern/spring2024/ds444039306202430">here</a>.
-  Hand in reading questions (the day before class) and class notebooks (after class) on Canvas
+  <p>Sign up for Piazza
+    <a href="https://piazza.com/northeastern/spring2024/ds444039306202430">here</a>.
+    Hand in reading questions (the day before class) and class notebooks (after class) on Canvas
   <a href="https://northeastern.instructure.com/courses/166739/assignments">here</a>.
   Homeworks will go to
   <a href="https://www.gradescope.com/courses/700584">gradescope here</a>.
@@ -139,30 +139,36 @@ be a final project where you work with a partner implement a solution to a probl
     <td>
       <a href="slides/Lecture-4-Losses-Backprop.pptx">slides</a> -
       <a href="https://papers.baulab.info/papers/Solla-1988.pdf">Read Solla 1988</a> -
-      <a href="https://bit.ly/ce-vs-mse">notebook on cross-entropy</a>
-      <a href="https://bit.ly/comp-graph">notebook on computation graphs</a>
+      <a href="https://bit.ly/ce-vs-mse">Notebook: cross-entropy</a>
+      <a href="https://bit.ly/comp-graph">Notebook: computation graphs</a>
       (<a href="https://northeastern.instructure.com/courses/166739/assignments/2185893">hand-in</a>) -
       <a href="https://northeastern.instructure.com/courses/166739/assignments/2174624">HW1 due</a> -
-      <a
-        href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/HW3_Training_NN/HW3_Training_NN.ipynb">HW3
-        out</a>
+      <a href="https://colab.research.google.com/github/davidbau/ds4440/blob/main/HW3_Training_NN/HW3_Training_NN.ipynb">HW3 out</a>
     </td>
   </tr>
   <tr>
     <td>Tuesday, January 23, 2024</td>
-    <td>Backprop II</td>
+    <td>Backprop II, SGD, and Momentum</td>
     <td>
-      <a href="https://papers.baulab.info/papers/Kingma-2015.pdf">Read Kingma 2015 (ADAM)</a> -
+      <a href="slides/Lecture-5-Backprop-ADAM.pptx">slides</a> -
+      <a href="https://papers.baulab.info/papers/Kingma-2015.pdf"
+        >Read Kingma 2015 (ADAM)</a> -
+      <a href="https://bit.ly/simple-backprop">Notebook: backprop</a>
+      (<a href="https://northeastern.instructure.com/courses/166739/assignments/2188330"
+        >hand-in</a>)
     </td>
   </tr>
   <tr>
     <td>Thursday, January 25, 2024</td>
-    <td>The practice of training (1). Statistical view: classification, evaluation, generalization</td>
-    <td><a href="https://northeastern.instructure.com/courses/166739/assignments/2183942">HW2 due</a></td>
+    <td>The practice of training (1). Convergence vs explosion, initialization</td>
+    <td>
+      <a href="https://papers.baulab.info/papers/Glorot-2010.pdf"
+        >Read Glorot 2010 (Xavier init)</a> -
+      <a href="https://northeastern.instructure.com/courses/166739/assignments/2183942">HW2 due</a></td>
   </tr>
   <tr>
     <td>Tuesday, January 30, 2024</td>
-    <td>The practice of training (2). Hyperparameters, convergence vs explosion, initialization</td>
+    <td>The practice of training (2). Generalization, regularization, weight decay</td>
   </tr>
   <tr>
     <td>Thursday, February 1, 2024</td>
